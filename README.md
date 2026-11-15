@@ -1,29 +1,16 @@
 # Mid-Project Komunikasi Data dan Jaringan Komputer
 ## Implementasi Jaringan Smart City Kota Surabaya
 
-**Kelompok:** 7 (K = 7) · **Skema pengalamatan:** VLSM · **Base IP:** `10.56.0.0` · **Domain layanan:** `k7.smartcity.lab`
+**Kelompok:** 7                      
+**Skema pengalamatan:** VLSM                   
+**Base IP:** `10.56.0.0`                 
+**Domain layanan:** `k7.smartcity.lab`                 
 
 | Anggota | NRP | Peran |
 |---|---|---|
-| Muhammad Syadzili Abdul Muhyi | 5027251030 | Network Architect (Soal 1, 2, 3) |
-| Chilmi Muhammad Ulin Nuha | 5027251003 | Core Network dan Security (Soal 5, 6, 7) |
-| Arjunina Maqbulin Usman | 5027251007 | SysAdmin, Technical Writer, dan Penyusun Laporan (Soal 4 dan 8) |
-
-
-## Daftar Isi
-
-1. [Pemilihan Skema: VLSM](#1-pemilihan-skema-vlsm)
-2. [Gambar Topologi](#2-gambar-topologi)
-3. [Soal 1: Perancangan Topologi](#soal-1--perancangan-topologi)
-4. [Soal 2: Tabel Subnetting](#soal-2--tabel-subnetting)
-5. [Soal 3: Static Routing](#soal-3--static-routing)
-6. [Soal 4: DHCP](#soal-4--dhcp)
-7. [Soal 5: NAT](#soal-5--nat)
-8. [Soal 6: Tunnel GRE (Bonus IPsec)](#soal-6--tunnel-gre-bonus-ipsec)
-9. [Soal 7: Dynamic Routing OSPF](#soal-7--dynamic-routing-ospf)
-10. [Soal 8: Layanan Aplikasi Smart City](#soal-8--layanan-aplikasi-smart-city)
-11. [Soal 9: Demo](#soal-9--demo)
-12. [Checklist Screenshot](#checklist-screenshot)
+| Muhammad Syadzili Abdul Muhyi | 5027251030 | Soal 1, 2, 3 |
+| Chilmi Muhammad Ulin Nuha | 5027251003 | Soal 5, 6, 7 |
+| Arjunina Maqbulin Usman | 5027251007 | Soal 4, 8, Dokumentasi (markdown) |
 
 ---
 
@@ -67,9 +54,8 @@ Topologi mengikuti Gambar 1 pada soal: R-ISP dan Server 8.8.8.8 di atas, R-PUSAT
 | End device | PC-PT, Laptop-PT, Server-PT | 15 | 1 perangkat perwakilan per LAN, ditambah Server 8.8.8.8 |
 | **Total** | | **37** | 8 router, 10 switch, 4 AP, 15 end device |
 
-Modul HWIC-2T dipasang saat router **power off**:
 
-| Router | Modul | Port serial | Kebutuhan |
+| Router | Jumlah Modul | Port serial | Kebutuhan |
 |---|:-:|---|---|
 | R-PUSAT | 3 | Serial0/0/0 sampai 0/2/1 (6 port) | 1 ke R-ISP, L1 sampai L5 |
 | R-UTARA | 2 | Serial0/0/0 sampai 0/1/1 (4 port) | L2, L6, cadangan L7 |
@@ -1479,7 +1465,7 @@ Setelah L1 putus, adjacency R-PUSAT dan R-DC hilang. OSPF menghitung ulang jalur
 
 
 **`show ip interface brief` R-PUSAT setelah L1 dipulihkan**                                                 
-![alt text](image.png)
+![alt text](soal8-ospf-pulih-interface.png)
 
 
 ---
