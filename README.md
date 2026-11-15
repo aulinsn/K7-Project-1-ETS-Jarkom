@@ -1465,7 +1465,7 @@ Setelah L1 putus, adjacency R-PUSAT dan R-DC hilang. OSPF menghitung ulang jalur
 
 
 **`show ip interface brief` R-PUSAT setelah L1 dipulihkan**                                                 
-![alt text](soal8-ospf-pulih-interface.png)
+![alt text](images/soal8-ospf-pulih-interface.png)
 
 
 ---
